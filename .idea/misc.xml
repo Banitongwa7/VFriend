@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/IdeaProjects/VFriend/app/src/main/res/drawable/ic_send_message.xml" value="0.223" />
+        <entry key="..\:/Users/ASUS/IdeaProjects/VFriend/app/src/main/res/drawable/rounded_corner.xml" value="0.222" />
+        <entry key="..\:/Users/ASUS/IdeaProjects/VFriend/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/IdeaProjects/VFriend/app/src/main/res/layout/chat_item.xml" value="0.21510416666666668" />
+      </map>
+    </option>
+  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>

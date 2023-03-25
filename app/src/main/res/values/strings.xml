@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VFriend</string>
+    <string name="message_hint">Écrivez votre message</string>
+    <string name="welcome">Bienvenue sur VFriend \n Votre ami virtual à porter de main</string>
 </resources>
