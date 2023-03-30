@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // hide toolbar
+        getSupportActionBar().hide();
+
         messageList = new ArrayList<>();
 
         recyclerView = findViewById(R.id.recycler_view);
@@ -87,11 +90,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             jsonObject.put("model","text-davinci-003");
             jsonObject.put("prompt",message);
-            jsonObject.put("max_tokens","4000");
-            jsonObject.put("temperature","0");
+            jsonObject.put("max_tokens",4000);
+            jsonObject.put("temperature",0);
         }catch (JSONException e){
             e.printStackTrace();
         }
+        @Deprecated
         RequestBody requestBody = RequestBody.create(JSON, jsonObject.toString());
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
