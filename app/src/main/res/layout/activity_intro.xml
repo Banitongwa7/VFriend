@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".IntroActivity"
-        android:background="@drawable/ic_vfriendvfriend"
+        android:background="@drawable/ic_vfriend_intro"
 >
 
 </androidx.constraintlayout.widget.ConstraintLayout>
