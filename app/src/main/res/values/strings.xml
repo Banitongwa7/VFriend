@@ -2,4 +2,12 @@
     <string name="app_name">VFriend</string>
     <string name="message_hint">Écrivez votre message</string>
     <string name="welcome">Bienvenue sur VFriend \n Votre ami virtual à porter de main</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
