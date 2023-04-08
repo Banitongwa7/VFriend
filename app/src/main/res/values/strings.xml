@@ -10,4 +10,11 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="confirmez_votre_mot_de_passe">Confirmez votre mot de passe</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="vous_avez_d_j_un_compte_se_connecter">Vous avez déjà un compte ? Se connecter</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="vous_n_avez_pas_de_compte_s_inscrire">Vous n\'avez pas de compte ? S\'inscrire</string>
 </resources>

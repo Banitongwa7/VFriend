@@ -18,8 +18,68 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="380dp"
+                android:layout_marginTop="120dp"
                 android:padding="20dp">
+
+            <EditText
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/signup_email"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/email"
+                    android:layout_marginTop="30dp"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="10dp"/>
+
+            <EditText
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/signup_password"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/mot_de_passe"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"/>
+
+
+            <EditText
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/signup_comfirm"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/confirmez_votre_mot_de_passe"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/baseline_pass_24"
+                    android:drawablePadding="10dp"/>
+
+
+
+            <Button
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:text="@string/s_inscrire"
+                    android:id="@+id/signup_button"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/purple_700"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signin_text"
+                    android:text="@string/vous_avez_d_j_un_compte_se_connecter"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+            />
 
         </LinearLayout>
     </LinearLayout>
