@@ -15,11 +15,11 @@ public class IntroActivity extends AppCompatActivity {
         // hide toolbar
         getSupportActionBar().hide();
 
-        // next activity, after 3 seconds
+        // next activity, after 5 seconds
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(IntroActivity.this, MainActivity.class);
+            Intent intent = new Intent(IntroActivity.this, SignInActivity.class);
             startActivity(intent);
             finish();
-        }, 3000);
+        }, 5000);
     }
 }

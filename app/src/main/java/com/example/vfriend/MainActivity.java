@@ -1,5 +1,7 @@
 package com.example.vfriend;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     OkHttpClient client = new OkHttpClient();
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
         welcomeTextView = findViewById(R.id.welcom_text);
         messageEditText = findViewById(R.id.message_edit_text);
         sendButton = findViewById(R.id.send_button);
+
+        //concat welcome text and email of user
+        Intent intent = getIntent();
+        String email = intent.getStringExtra("email");
+        welcomeTextView.setText("Bienvenue " + email + " !");
 
         //setup recycler view
         messageAdapter = new MessageAdapter(messageList);

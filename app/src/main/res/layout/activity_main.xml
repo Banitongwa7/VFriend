@@ -18,10 +18,9 @@
             android:id="@+id/welcom_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:text="@string/welcome"
             android:gravity="center"
-    />
+            android:layout_centerInParent="true"/>
 
     <RelativeLayout
         android:id="@+id/bottom_layout"
@@ -37,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/message_hint"
                 android:padding="16dp"
-                android:layout_toLeftOf="@id/send_button"
+                android:layout_toStartOf="@id/send_button"
                 android:background="@drawable/rounded_corner"
                 android:layout_centerInParent="true"/>
 
