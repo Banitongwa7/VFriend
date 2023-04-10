@@ -29,7 +29,20 @@
                     android:hint="@string/email"
                     android:layout_marginTop="30dp"
                     android:padding="8dp"
+                    android:inputType="textEmailAddress"
                     android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="10dp"/>
+
+            <EditText
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/fullname"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/nom_complet"
+                    android:layout_marginTop="20dp"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/baseline_person_24"
                     android:drawablePadding="10dp"/>
 
             <EditText

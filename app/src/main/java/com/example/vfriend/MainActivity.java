@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         //concat welcome text and email of user
         Intent intent = getIntent();
-        String email = intent.getStringExtra("email");
-        welcomeTextView.setText("Bienvenue " + email + " !");
+        User user = (User) intent.getSerializableExtra("user");
+        welcomeTextView.setText("Bienvenue " + user.getFullname() + " !");
 
         //setup recycler view
         messageAdapter = new MessageAdapter(messageList);

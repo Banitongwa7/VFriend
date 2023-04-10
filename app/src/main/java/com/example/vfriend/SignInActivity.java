@@ -7,10 +7,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.vfriend.dao.UserDAO;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private DatabaseHelper dbHelper;
+    private UserDAO userDAO;
     private EditText edtEmail, edtPassword;
     private TextView tvSignUp;
     private Button btnSignIn;
@@ -28,7 +29,7 @@ public class SignInActivity extends AppCompatActivity {
         btnSignIn = findViewById(R.id.login_button);
         tvSignUp = findViewById(R.id.signup_text);
 
-        dbHelper = new DatabaseHelper(this);
+        userDAO = new UserDAO(SignInActivity.this);
 
         btnSignIn.setOnClickListener(v -> {
             String email = edtEmail.getText().toString();
@@ -42,14 +43,14 @@ public class SignInActivity extends AppCompatActivity {
                 if (!email.matches("[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}")) {
                     Toast.makeText(this, "Email invalide.", Toast.LENGTH_SHORT).show();
                 }else{
-                    if (dbHelper.checkUser(email, password)) {
+                    User user = userDAO.checkUser(email, password);
+                    if (user != null) {
                         Toast.makeText(this, "Vous êtes connecté.", Toast.LENGTH_SHORT).show();
-                        // send email to main activity
                         Intent intent = new Intent(SignInActivity.this, MainActivity.class);
-                        intent.putExtra("email", email);
+                        intent.putExtra("user", user);
                         startActivity(intent);
-                    } else {
-                        Toast.makeText(this, "Email ou mot de passe incorrect.", Toast.LENGTH_SHORT).show();
+                    }else{
+                        Toast.makeText(this, "Email ou mot de passe invalide.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

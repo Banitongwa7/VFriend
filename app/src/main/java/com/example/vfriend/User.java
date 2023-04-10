@@ -5,14 +5,16 @@ import java.io.Serializable;
 public class User implements Serializable {
     private String email;
     private String password;
+    private String fullname;
 
     public User() {
 
     }
 
-    public User(String email, String password) {
+    public User(String email, String password, String fullname) {
         this.email = email;
         this.password = password;
+        this.fullname = fullname;
     }
 
     public String getEmail() {
@@ -29,5 +31,13 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 }
