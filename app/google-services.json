@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "309039239362",
+    "project_id": "vfriend-e887a",
+    "storage_bucket": "vfriend-e887a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309039239362:android:e9ce51f41bc4be557d2b5b",
+        "android_client_info": {
+          "package_name": "com.example.vfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309039239362-aqunjga7iqf0n72b5bvfh1g85nrrc6ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LtcpkvZ9GNoMHNBfPkdXbLzJyarsQsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309039239362-aqunjga7iqf0n72b5bvfh1g85nrrc6ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

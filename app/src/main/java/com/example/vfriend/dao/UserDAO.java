@@ -42,21 +42,18 @@ public class UserDAO {
     }
 
     public User checkUser(String email, String password) {
-        SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
-        String[] projection = {"email", "password"};
-        String selection = "email = ? AND password = ?";
-        String[] selectionArgs = {email, password};
-        Cursor cursor = sqLiteDatabase.query("user", projection, selection, selectionArgs, null, null, null);
+        SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
+        String sql = "SELECT * FROM user WHERE email = '" + email + "' AND password = '" + password + "'";
+        Cursor cursor = sqLiteDatabase.rawQuery(sql, null);
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
             User user = new User();
             user.setEmail(cursor.getString(0));
-            user.setFullname(cursor.getString(1));
-            user.setPassword(cursor.getString(2));
+            user.setPassword(cursor.getString(1));
+            user.setFullname(cursor.getString(2));
             return user;
-        } else {
-            return null;
         }
+        return null;
     }
 
 }

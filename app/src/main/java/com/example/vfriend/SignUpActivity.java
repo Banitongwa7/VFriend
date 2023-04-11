@@ -41,6 +41,8 @@ public class SignUpActivity extends AppCompatActivity {
 
             if (email.isEmpty() || password.isEmpty() || cfmPassword.isEmpty() || fullname.isEmpty()) {
                 Toast.makeText(this, "Veuillez remplir tous les champs.", Toast.LENGTH_SHORT).show();
+            }else if(!email.matches("[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}")) {
+                Toast.makeText(this, "Email invalide.", Toast.LENGTH_SHORT).show();
             }else {
                 if (password.equals(cfmPassword)) {
                     // chech if email exist
@@ -61,8 +63,6 @@ public class SignUpActivity extends AppCompatActivity {
                     //Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
                 }
             }
-
-
         });
 
 
