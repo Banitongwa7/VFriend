@@ -33,6 +33,10 @@ To clone and run this application, you'll need [Android Studio](https://develope
 $ git clone https://github.com/Banitongwa7/VFriend.git
 ```
 
+## Contributing
+
+Contributions are welcome! To contribute, fork the repository and make your changes. Then, open a pull request.
+
 ## License
 
 MIT
